@@ -158,7 +158,10 @@ a:hover{
     font-size: 5rem;
     color: #ccd6f6;
 }
-
+.gdg_logo{
+    height: 95px;
+    
+}
 @media(max-width:480px){
     .cf-txt{
         font-size: 5rem;
