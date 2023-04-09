@@ -7,11 +7,15 @@
 4.Page Animations
 5.Preloader Styles
 6.Organizers Section
+6.Event Details / Venue Section
 Table of Contents */
 
+
+/* 1.Common Styles */
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body{
@@ -20,7 +24,7 @@ body{
     
 }
 
-/* Navigation Bar */
+/* 2.Navigation Bar */
 li{
     list-style: none;
 }
@@ -129,7 +133,7 @@ a:hover{
     }
 }
 
-/* title Section */
+/* 3.title Section */
 
 .title{
     text-align: center;
@@ -153,15 +157,23 @@ a:hover{
     height: 70px;
     width: 150px;
 }
-.cf-txt{
-    font-weight: bold;
-    font-size: 5rem;
+.collab_text{
+    display: inline;
     color: #ccd6f6;
+    position: relative;
+    margin-left: -239px;
+    top: 32px;
 }
 .gdg_logo{
     height: 95px;
     
 }
+.cf-txt{
+    font-weight: bold;
+    font-size: 5rem;
+    color: #ccd6f6;
+}
+
 @media(max-width:480px){
     .cf-txt{
         font-size: 5rem;
@@ -226,7 +238,7 @@ a:hover{
     width: 100%;
   }
 
-  /* Animation CSS */
+  /*4.Page Animation CSS */
   .hidden{
     opacity: 0;
     filter:blur(7px);
@@ -240,7 +252,7 @@ a:hover{
     transform: translateX(0);
   }
 
-  /* Preloader */
+  /* 5.Preloader */
 #preloader{
   background: #000;
   background-repeat: no-repeat;
@@ -257,7 +269,7 @@ a:hover{
 }
 
 
-/* Organizers Section */
+/* 6.Organizers Section */
 
 .containor{
     position: relative;
@@ -268,6 +280,7 @@ a:hover{
     align-items: center;
     flex-wrap: wrap;
     margin: 40px 0;
+    /* height: 0vh; */
 }
 .containor .card{
     position: relative;
@@ -361,7 +374,7 @@ a:hover{
     font-size: 24px;
 }
 
-/* Organizers Section */
+/* Extras */
 
 .takespace{
     height: 1000vh;
@@ -376,13 +389,56 @@ a:hover{
     text-align: center;
 }
 
-
-
-
-
-
-
-
-
-
-
+/* 7.Event Details / Venue Section */
+.parallax{
+    position: relative;
+    margin-top: 500px;
+    width: 100%;
+    height: 100vh;
+    background: #0a192f;
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+   overflow-x: hidden;
+   overflow-y: hidden;
+}
+.parallax img{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+}
+.parallax img#bushfront{
+    z-index: 2;
+}
+.parallax img#bushfront{
+    z-index: 2;
+}
+.parallax img#grass{
+    z-index: 3;
+}
+#venuetxt{
+    position: absolute;
+    font-size: 3em;
+    color: #ccd6f6;
+    /* text-shadow: 2px 4px 4px #f9f9f9 ; */
+    top: 154px;
+}
+#venue_text{
+    position: absolute;
+    font-size: 3em;
+    color: #ccd6f6;
+    /* text-shadow: 2px 4px 4px #f9f9f9 ; */
+    top: 100px;
+}
+#venue_text i{
+    margin-right: 20px;
+    color: rgba(255, 0, 0, 0.553);
+}
+.sec{
+    position: relative;
+    background: #020912;
+    height: 100vh;
+}
